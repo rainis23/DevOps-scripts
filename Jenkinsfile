@@ -83,7 +83,7 @@ pipeline {
     post {
         always {
             echo "Bootcamp Pipeline completed"
-            archiveArtifacts artifacts: '*.sh', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'scripts/*.sh', allowEmptyArchive: true
         }
         success {
             echo "Bootcamp Pipeline succeeded!"
